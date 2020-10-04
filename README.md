@@ -6,4 +6,4 @@ I tried to summarize what i learned while writing the code for that lab, mention
 
 Screen-shot
 
-[[ss.png]]
+[[/ss.png]]
