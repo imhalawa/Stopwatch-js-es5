@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.row {
+    display: grid;
+    grid-gap: 0.1rem;
+    grid-template-columns: 20% 80%;
+    /*Exception: Only One row !*/
+    height: 100%;
+}
+
+
+/* History Section
+   ========================================================================== */
+
+.history {
+    height: 100%;
+    background: #f5f6fa;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    overflow: hidden;
+}
+
+.history__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #45aaf2;
+}
+
+.history__footer {
+    border-top: 2px solid #45aaf2;
+    font-size: 0.7rem;
+}
+
+.history__header>h1 {
+    margin: 0;
+}
+
+.history__header--clear {
+    color: #eb3b5a;
+}
+
+.history__header--clear:hover,
+.history__header--clear:focus {
+    color: #eb3b5a !important;
+    border-color: #eb3b5a !important;
+}
+
+.history__items {
+    overflow-y: scroll;
+}
+
+.history__item {
+    border-bottom: 1px dashed #4b7bec;
+    width: 100%;
+}
+
+.history__time {
+    font-size: 1.3rem;
+}
+
+.history__note {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.history__control {
+    border: none;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.4rem;
+}
+
+.history__control:hover {
+    border-left: 1px dashed #4b7bec;
+    border-right: 1px dashed #4b7bec;
+    transition: all 0.1s ease-in-out;
+}
+
+.history__control:focus {
+    border: 1px dashed#4b7bec;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    color: #4b7bec;
+}
+
+.history__note--content {
+    margin: 0;
+}
+
+.history__note--editable {
+    background-color: #fff;
+    padding: 0 1rem;
+    border: 1px dashed #000;
+}
+
+.history__control ion-icon {
+    font-size: 1rem;
+}
+
+.history__note--remove,
+.history__note--remove:focus,
+.history__note--remove:hover {
+    color: #eb3b5a;
+    border-color: #eb3b5a;
+}
+
+
+/* Counter Section
+   ========================================================================== */
+
+.counter {
+    justify-self: center;
+    align-self: center;
+    /* background: #f00; */
+    height: 40%;
+    width: 50%;
+}
+
+.counter__blocks {
+    /* background-color: #0f0; */
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed rgb(135, 74, 74);
+}
+
+.counetr__block {
+    font-size: 4.5rem;
+    font-family: 'Piazzolla', serif;
+}
+
+.counter__controls {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter__control {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.1rem;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+.counter__control:hover {
+    transform: translateY(-2px);
+    transition: all 0.1s ease-in-out;
+}
+
+.counter__control:focus {
+    border: 1px dashed #F79F1F;
+    border-radius: 55px;
+    transition: all 0.3s ease-in-out;
+}
+
+.active {
+    color: #F79F1F;
+}
+
+.disabled {
+    color: #d1d8e0;
+}
+
+.separator {
+    margin: 0 1rem;
+}
+
+.counter__controls ion-icon {
+    font-size: 3rem;
+}

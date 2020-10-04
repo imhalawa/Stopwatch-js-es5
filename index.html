@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Stop Watch %HH%:%MM%:%SS%</title>
+
+
+    <!-- Linked Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Side Bar -->
+            <aside class="history">
+                <header class="history__header">
+                    <h1>History
+                    </h1>
+                    <hr>
+                    <button type="button" class="history__control history__header--clear">
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </button>
+                </header>
+                <div class="history__items">
+
+                </div>
+                <footer class="history__footer">
+                    Hint: Press Ctrl+Enter to save & exit edit mode.
+                </footer>
+
+            </aside>
+
+            <!-- Content -->
+            <main class="counter">
+                <section class="counter__blocks">
+                    <div class="counetr__block counetr__block--hour">HH</div>
+                    <div class="counetr__block separator">:</div>
+                    <div class="counetr__block counetr__block--minute">MM</div>
+                    <div class="counetr__block separator">:</div>
+                    <div class="counetr__block counetr__block--second">SS</div>
+                </section>
+                <section class="counter__controls">
+                    <button class="counter__control counter--start active" title="Start">
+                        <ion-icon name="play-circle"></ion-icon>
+                    </button>
+                    <button class="counter__control counter--pause" title="Pause">
+                        <ion-icon name="pause-circle"></ion-icon>
+                    </button>
+                    <button class="counter__control counter--stop" title="Stop">
+                        <ion-icon name="stop-circle"></ion-icon>
+                    </button>
+                    <!-- <button class="counter__control counter--reset" title="Reset">
+                        <ion-icon name="reload-circle"></ion-icon>
+                    </button> -->
+                </section>
+        </div>
+        </section>
+        </main>
+
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>
